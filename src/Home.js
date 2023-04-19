@@ -21,7 +21,14 @@ export default function Home() {
   return (
     <div>
       {data.map((m) => (
-        <List key={m.rnum} movieNm={m.movieNm} openDt={m.openDt} />
+        <List
+          key={m.rnum}
+          movieNm={m.movieNm}
+          openDt={m.openDt}
+          rank={m.rank}
+          audiCnt={m.audiCnt}
+          audiAcc={m.audiAcc}
+        />
       ))}
     </div>
   );
